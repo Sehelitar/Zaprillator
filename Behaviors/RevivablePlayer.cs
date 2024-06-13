@@ -61,7 +61,7 @@ internal class RevivablePlayer : NetworkBehaviour, IShockableWithGun
 
     private IEnumerator AutoStopShocking()
     {
-        yield return new WaitForSeconds(6f);
+        yield return new WaitForSeconds(1f);
         ((PatcherTool)_shockedBy)?.StopShockingAnomalyOnClient();
     }
 
