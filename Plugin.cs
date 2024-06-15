@@ -52,7 +52,7 @@ public class Plugin : BaseUnityPlugin
                 }
             }
         }
-        catch (Exception e)
+        catch (Exception)
         {
         }
     }

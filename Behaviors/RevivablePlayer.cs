@@ -196,11 +196,16 @@ internal class RevivablePlayer : NetworkBehaviour, IShockableWithGun
         RagdollGrabbableObject[] objectsOfType = FindObjectsOfType<RagdollGrabbableObject>();
         for (int index = 0; index < objectsOfType.Length; ++index)
         {
-            if (objectsOfType[index].isHeld && objectsOfType[index].playerHeldBy != null)
+            if (objectsOfType[index].ragdoll.playerScript == targetPlayer && objectsOfType[index].isHeld && objectsOfType[index].playerHeldBy != null)
                 objectsOfType[index].playerHeldBy.DropAllHeldItems();
         }
+
         foreach (var component in FindObjectsOfType<DeadBodyInfo>())
-            Destroy(component.gameObject);
+        {
+            if(component.playerScript == targetPlayer)
+                Destroy(component.gameObject);
+        }
+
         StartOfRound.Instance.livingPlayers += 1;
         StartOfRound.Instance.UpdatePlayerVoiceEffects();
 
