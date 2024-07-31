@@ -4,7 +4,7 @@
         <TargetFramework>netstandard2.1</TargetFramework>
         <AssemblyName>Zaprillator</AssemblyName>
         <Description>Use your zapgun to turn your dead friend into a living one.</Description>
-        <Version>1.0.1</Version>
+        <Version>1.0.2</Version>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <LangVersion>latest</LangVersion>
         <IsPublishable>False</IsPublishable>
@@ -18,8 +18,8 @@
         <RootNamespace>Zaprillator</RootNamespace>
         <Company>Sehelitar</Company>
         <Product>Zaprillator</Product>
-        <AssemblyVersion>1.0.1</AssemblyVersion>
-        <FileVersion>1.0.1</FileVersion>
+        <AssemblyVersion>1.0.2</AssemblyVersion>
+        <FileVersion>1.0.2</FileVersion>
         <Copyright>Sehelitar @ https://sehelitar.tv</Copyright>
     </PropertyGroup>
 
@@ -27,7 +27,7 @@
         <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
         <PackageReference Include="BepInEx.Core" Version="5.*" />
         <PackageReference Include="BepInEx.PluginInfoProps" Version="1.*" />
-        <PackageReference Include="LethalCompany.GameLibs.Steam" Version="50.0.1-ngd.0" />
+        <PackageReference Include="LethalCompany.GameLibs.Steam" Version="56.0.1-ngd.0" />
         <PackageReference Include="UnityEngine.Modules" Version="2022.3.9" IncludeAssets="compile" PrivateAssets="all" />
     </ItemGroup>
 

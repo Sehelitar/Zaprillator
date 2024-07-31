@@ -129,7 +129,6 @@ internal class RevivablePlayer : NetworkBehaviour, IShockableWithGun
         targetPlayer.isInElevator = true;
         targetPlayer.isInHangarShipRoom = true;
         targetPlayer.isInsideFactory = false;
-        targetPlayer.wasInElevatorLastFrame = false;
         if(isTargetLocalPlayer)
             StartOfRound.Instance.SetPlayerObjectExtrapolate(false);
         targetPlayer.TeleportPlayer(reviveAt ?? StartOfRound.Instance.GetPlayerSpawnPosition(playerIndex));

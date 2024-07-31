@@ -1,5 +1,7 @@
 # Zaprillator
 
+=&gt; <span style="color:lightgreen;font-weight:bold;">NEW UPDATE - v56 COMPATIBLE</span> &lt;=
+
 You don't know what to do with your freshly acquired ZapGun? You have that one friend that dies ALL THE TIME?
 
 **Worry no more, I have THE solution!**
